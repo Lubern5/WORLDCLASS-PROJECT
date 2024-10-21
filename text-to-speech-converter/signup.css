@@ -1,0 +1,94 @@
+/* Body Styles */
+body {
+    background-image: url(./1_BGO57XTzTcWJjkxm4yu5Kw.jpg); /* Background image */
+    font-family: 'Arial', sans-serif; /* Font family */
+    background-color: #f4f4f4; /* Fallback background color */
+    padding: 20px; /* Padding for body */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-size: cover; /* Ensure the image covers the whole area */
+    background-position: center; /* Center the background image */
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 400px; /* Limit the maximum width */
+    width: 100%; /* Full width */
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white for depth */
+    padding: 30px; /* Ample padding for comfort */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Softer shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect on Form Container */
+.form-container:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Spacing below heading */
+    font-size: 1.75rem; /* Increased font size for better visibility */
+    color: #003366; /* Dark blue for contrast */
+}
+
+/* Input Styles */
+input {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding for comfort */
+    margin: 12px 0; /* Consistent spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color */
+}
+
+/* Input Focus Styles */
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Button Hover Styles */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Loading Message Styles */
+.loading {
+    display: none; /* Initially hidden */
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Spacing */
+}
+
+/* Message Styles */
+.message {
+    color: #dc3545; /* Red color for error messages */
+    text-align: center; /* Center text */
+}
+
+.success {
+    color: #28a745; /* Green color for success messages */
+    text-align: center; /* Center text */
+}

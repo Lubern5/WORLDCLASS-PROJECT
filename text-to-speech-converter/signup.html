@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Signup</h2>
+        <div id="loadingMessage" class="loading">Signing you up...</div>
+        <div id="authSuccessMessage" class="success"></div>
+        <div id="authErrorMessage" class="message"></div>
+        <input type="text" id="username" placeholder="Username" required aria-required="true">
+        <input type="password" id="password" placeholder="Password" required aria-required="true">
+        <button id="signupButton">Sign Up</button>
+        <p>Already have an account? <a href="index.html">Log In</a></p>
+    </div>
+
+    <script src="signup.js"></script>
+
+</body>
+</html>
