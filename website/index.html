@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubern Figaro</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="">
+</head>
+
+<body>
+
+    <!-- header area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3 bgcolor-black">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <a href="#" class="navbar-brand font-staat font-size-40">Welcome</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+                        <a href="#about_me"
+                            class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
+                        <a href="#awards"
+                            class="nav-item nav-link text-white-50 font-os font-size-16 active">Background</a>
+                        <a href="#portfolio"
+                            class="nav-item nav-link text-white-50 font-os font-size-16 active">Portfolio</a>
+                        <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't
+                            read the counter</div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+    </header>
+    <!-- #header area -->
+
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+
+                <!-- site-banner area -->
+                <section class="site-banner bg-light" id="home">
+                    <div class="banner-area">
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            <h1 class="text-black font-staat font-size-40 text-uppercase py-3">Lubern Figaro</h1>
+                            <h5 class="text-black font-ram font-size-27">I'm a <span id="typed"></span></h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- #site-banner area -->
+
+                <!-- about me area -->
+                <section class="about px-4 my-5" id="about_me">
+                    <div class="me py-5">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">Information</h5>
+                        <h1 class="text-uppercase font-staat font-size-34">CLICK PICTURE</h1>
+                        
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-sm-5 pl-0">
+                            <a href="../Lu-page/profile.html">
+                                <i class="fab fa-apple"></i>
+                                <img src="../website/images/2024-01-11_13-47-58_9970.jpeg" alt="profile image" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="text-uppercase font-os font-size-16 text-muted">About Me</h6>
+                            <h5 class="font-ram font-size-20 py-2">Lubern Figaro a <span id="typed_2"></span></h5>
+                            <p class="font-ram text-black-50 py-2">
+                                Dynamic DevOps/Cloud Engineer with over 3 years of progressive experience in architecting and implementing cutting-edge cloud solutions. 
+                            Expertise in leveraging advanced DevOps methodologies, cloud-native technologies, and automation tools to drive innovation and optimize 
+                            performance in complex environments. Proven ability to collaborate effectively across teams and deliver results aligned with business objectives.
+                        
+                            </p>
+                            <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                                <div class="d-flex flex-column">
+                                    <p class="font-ram"><b>Website: </b><span class="text-black-50">figarodesigns.xyz</span></p>
+                                </div>
+                            </div>
+                            <a class="btn btn-dark text-uppercase mr-3" href="../Lu-page/Resume - Lubern Figaro (30-LF).pdf"
+                                download="Resume.pdf">Download Resume</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- #about me area -->
+
+                <!-- ability -->
+                <section class="skill px-4 py-5 bg-light" id="services">
+                    <div class="ability py-3">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">Ability</h5>
+                        <h1 class="text-uppercase font-staat font-size-34">My skills</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 pl-4">
+                            <p class="font-ram font-size-16 text-black-50 pb-3">                            
+                            I possess proficiency in a range of technologies including AWS, Continuous Integration/Continuous Deployment (CICD) Pipeline, Terraform, 
+                            Cloud Formation, Jenkins,Docker, Kubernetes, Ansible, GitHub, Python, Java, Maven, Security Identity & Access Management, Monitoring And 
+                            Event Management, Amazon S3, Disaster Recovery, and RDS. Additionally, I have experience in developing and implementing API & Lambda solutions. Moreover, I have some exposure to HTML/CSS.
+                                </br>
+                            </p>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item">
+                                    <i class="fab fa-docker"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-python"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-jenkins"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-aws"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fab fa-github"></i>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fas fa-code-branch"></i> <!-- API Icon -->
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fas fa-database"></i> <!-- Database Icon -->
+                                </li>
+                                
+                            </ul>
+                        </div>
+                </section>
+                <!-- #ability -->
+
+
+                <!-- awards -->
+                <section class="awards px-4 py-5" id="awards">
+                    <div class="do py-5">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">Background</h5>
+                        <h1 class="text-uppercase font-staat font-size-34"><i class="fas fa-award"></i> History</h1>
+                    </div>
+                    <div class="w-100">
+
+                        <p class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
+                            In my high school and college days, football was my world. But as I graduated, 
+                            my heart whispered a new calling - the exhilarating world of technology and programming. I chose to 
+                            dive into this dynamic realm, starting with online courses and staying abreast of the latest breakthroughs. 
+                            Through internships and volunteer work, I eagerly gained hands-on experience, navigating the challenges with unwavering resolve.
+                            Surprisingly, the principles that fueled my football victories seamlessly applied here too. Teamwork and effective communication, reminiscent of the football field, 
+                            emerged as keystones in this tech domain. My football background instilled in me an unyielding work ethic and a relentless pursuit of success, becoming the bedrock of my journey.
+                            This transition has proven to be a game-changer, allowing me to channel my fervor for technology while leveraging the invaluable skills and lessons I acquired from my football days.
+                        </p>
+                        <audio controls>
+                            <source src="./images/a588347d-c706-403e-b597-6c07e1b18ce1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </section>
+
+                <!--<div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4 text-center">
+                            <div class="panel border p-4">
+                                <span class="icon text-secondary"><i class="fas fa-directions fa-3x"></i></span>
+                                <h4 class="font-ram py-4">Art Direction</h4>
+                                <p class="font-ram font-size-16 text-black-50">
+                                    Fusce suscipit, ante a hendrerit thelery ullamcorper, risus nisl cursus purus the
+                                    viverra ante nulla vel justo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <!-- #services -->
+
+                <!-- work -->
+                <section class="work py-5 px-4 bg-light" id="portfolio">
+                    <div class="py-3">
+                        <h5 class="text-uppercase font-os font-size-16 text-muted">Porfolio</h5>
+                        <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
+                    </div>
+                    <div class="row">
+                        <div class="frame col-xs-6"></div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/text-to-speech-converter"><img src="../website/images/pexels31.webp" title="Covid App"
+                                    alt="work1" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>Text-to-speech-converter</h2>
+                                <p><a href="https://github.com/Lubern5/text-to-speech-converter" title="Live Site"><i
+                                            class="far fa-eye eye"></i></a></p>
+                                <p><a href="https://github.com/Lubern5/text-to-speech-converter" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/devops-qr-code"> <img src="../website/images/pexels31.webp"
+                                    title="Weather Dashboard" alt="work1" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>Qr-code</h2>
+                                <p><a href="https://github.com/Lubern5/devops-qr-code" title="Live Site"><i
+                                            class="far fa-eye eye"></i></a>
+                                </p>
+                                <p><a href="https://github.com/Lubern5/devops-qr-code" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/k8s-mario"><img src="../website/images/pexels31.webp"alt="work1"
+                                    title="My Blog" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>K8s-mario</h2>
+                                <p><a href="https://github.com/Lubern5/k8s-mario" title="Live Site"><i
+                                            class="far fa-eye eye"></i></a></p>
+                                <p><a href="https://github.com/Lubern5/k8s-mario" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/AWS-DEVOPS-CAPSTONE-PROJECT"><img src="../website/images/pexels31.webp" alt="work1"
+                                    title="MyBrary" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>Capstone-project</h2>
+                                <p><a href="https://github.com/Lubern5/AWS-DEVOPS-CAPSTONE-PROJECT" title="Live Site"><i
+                                            class="far fa-eye eye"></i></a></p>
+                                <p><a href="https://github.com/Lubern5/AWS-DEVOPS-CAPSTONE-PROJECT" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/Jenkins-Zero-To-Hero"><img src="../website/images/pexels31.webp"
+                                    title="Hackernews Clone" alt="work1" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>Jenkins-Zero-To-Hero</h2>
+                                <p><a href="https://github.com/Lubern5/Jenkins-Zero-To-Hero"title="Live Site"><i
+                                            class="far fa-eye eye"></i></a>
+                                </p>
+                                <p><a href="https://github.com/Lubern5/Jenkins-Zero-To-Hero" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                        <div class="frame col-sm-4 pb-4">
+                            <a href="https://github.com/Lubern5/k8s-starter-eks-terraform"><img src="../website/images/pexels31.webp" alt="work1"
+                                    title="Git-Fetch App" class="img-fluid"></a>
+                            <div class="details">
+                                <h2>k8s-starter-eks-terraform</h2>
+                                <p><a href="https://github.com/Lubern5/k8s-starter-eks-terraform" title="Live Site"><i
+                                            class="far fa-eye eye"></i></a></p>
+                                <p><a href="https://github.com/Lubern5/k8s-starter-eks-terraform" title="Source Code"><i
+                                            class="fab fa-github-square giti"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- #work -->
+              <!-- testimonials -->
+              <section class="testimonials py-5 px-4" id="testimonials">
+                <div class="py-3">
+                    <h5 class="text-uppercase font-os font-size-16 text-muted">Feedback</h5>
+                    <h1 class="text-uppercase font-staat font-size-34">What People Say</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-3">
+                            <p>"Lubern is a dedicated and passionate individual, always striving for excellence."</p>
+                            <h6 class="font-weight-bold">-John</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-3">
+                            <p>"His technical skills and teamwork spirit make him a valuable asset."</p>
+                            <h6 class="font-weight-bold">- Angel</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial bg-light p-3">
+                            <p>"An impressive problem solver with a keen eye for detail!"</p>
+                            <h6 class="font-weight-bold">- Steve</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- #testimonials -->
+                <!--footer-->
+                <footer id="footer" class="pt-5 px-3">
+                    <div id="contact_us">
+                        <div class="row bg-light py-5">
+                            <div class="col-sm-4 my-5 text-center">
+                                <h6 class="font-ram font-size-16 text-black-50">&copy;2024 Lubern. All rights reserved
+                                </h6>
+                            </div>
+                            <div class="col-sm-4 my-4 text-center">
+                                <div class="footer-title">
+                                    <p class="description font-os font-size-16 text-black-50 text-uppercase">Made with ❤
+                                    </p>
+                                </div>
+                                <div class="counter-number">Hire Me</div>
+                            </div>
+                            <div class="social-icons col-sm-4 my-4 text-center">
+                                <a href="https://www.linkedin.com/in/lubern-figaro-088941151//" target="blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/lubern5" target="blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="" target="blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+        integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+
+    <script src="./vendor/typed/typed.min.js"></script>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
+
+<script src="./vendor/typed/typed.min.js"></script>
+
+    <script src="./index.js"></script>
+</body>

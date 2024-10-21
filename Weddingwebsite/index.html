@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Agency Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <a href="../LuReBuild/index.html" class="logo text-dark fs-3">Lubern Figaro</a>
+            <a href="#" class="menu"><ion-icon name="menu"></ion-icon></a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-btn active" href="/" onclick="restHeader();"><ion-icon name="home"></ion-icon> Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-btn" href="#" data-target="about">About</a></li>
+                <li class="nav-item"><a class="nav-btn" href="#" data-target="services">Services</a></li>
+                <li class="nav-item"><a class="nav-btn" href="#" data-target="portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search" aria-label="Search">
+                <ion-icon name="search"></ion-icon>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Banner Section -->
+    <div class="banner container-fluid">
+        <div class="bg-slide slide-1 active">
+            <div class="content text-center">
+                <h2>Wedding</h2>
+                <p>Creating unforgettable memories on your special day.</p>
+            </div>
+            <div class="circle bg">
+                <img src="../Weddingwebsite/images/IMG_7304.jpg" alt="Beautiful wedding setup" class="img-fluid">
+                <div class="circle large">
+                    <img src="./Weddingwebsite/images/IMG_7304.jpg" alt="Wedding ambiance" class="img-fluid"> 
+                    <div class="circle small">
+                        <img src="./Weddingwebsite/images/IMG_7304.jpg" alt="Wedding decor" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-2">
+            <div class="content text-center">
+                <h2>Ceremony</h2>
+                <p>Let us help you plan the perfect ceremony filled with love and joy.</p>
+            </div>
+            <div class="circle bg">
+                <img src="../Weddingwebsite/images/0C3A8673.jpg" alt="Ceremony in progress" class="img-fluid">
+                <div class="circle large">
+                    <img src="../Weddingwebsite/images/0C3A8673.jpg" alt="Ceremony details" class="img-fluid"> 
+                    <div class="circle small">
+                        <img src="../Weddingwebsite/images/0C3A8673.jpg" alt="Ceremony decorations" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slide slide-3">
+            <div class="content text-center">
+                <h2>Honeymoon</h2>
+                <p>Explore the most romantic destinations for your honeymoon.</p>
+            </div>
+            <div class="circle bg">
+                <img src="../Weddingwebsite/images/IMG_2246.jpg" alt="Honeymoon destination" class="img-fluid">
+            </div>
+        </div>
+        <ul class="slide-loader">
+            <li><a class="slide-btn active" data-target="slide-1">1</a></li>
+            <li><a class="slide-btn" data-target="slide-2">2</a></li>
+            <li><a class="slide-btn" data-target="slide-3">3</a></li>
+        </ul>
+
+        <div class="share">
+            <p>Share this experience:</p>
+            <a href="#"><ion-icon name="share-social"></ion-icon></a>
+        </div>
+
+        <div class="lead text-center">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <defs>
+                    <path 
+                    id="circle" 
+                    d="M 50, 50 m -37, 0 a 37, 37 0 1, 1 74,0 a 37,37 0 1,1 -74, 0"
+                    /> 
+                </defs>
+                <text font-size="10">
+                    <textPath xlink:href="#circle">
+                        Will you marry me, Baby... Yes, I do!
+                    </textPath>
+                </text>
+            </svg>
+            <a href="#" class="move-down" onclick="initNavigation();">
+                <ion-icon name="chevron-down"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Start -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center">About Us</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="img-box">
+                            <img src="../Weddingwebsite/images/0C3A8653.jpg" alt="About our agency" class="img-fluid">
+                            <img src="../Weddingwebsite/images/0C3A8653.jpg" alt="Wedding planning" class="corner-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./images/FullSizeRender.JPG" alt="Team at our agency" class="section-bg-img img-fluid">
+                        <h4>Your Dream Wedding Awaits</h4>
+                        <p>
+                            At Lubern Figaro Wedding Agency, we understand that every couple is unique. Our dedicated team is committed to crafting a personalized wedding experience that reflects your love story. With years of experience in the industry, we have the expertise to make your dream wedding come to life.
+                        </p>
+                        <p>
+                            From venue selection to decoration and catering, we handle every detail so that you can focus on what truly matters—celebrating your love. Our goal is to create unforgettable memories that you and your guests will cherish for a lifetime.
+                        </p>
+                        <a href="#" class="section-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Our Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center">Our Services</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../Weddingwebsite/images/0C3A8684.jpg" alt="Wedding Planning Services" class="img-fluid">
+                            </div>
+                            <div class="details">
+                                <h4>Wedding Planning</h4>
+                                <p>
+                                    Our comprehensive wedding planning services ensure that no detail is overlooked. From initial consultations to the big day, we are with you every step of the way.
+                                </p>
+                                <a href="#" class="section-btn">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../Weddingwebsite/images/0C3A8684.jpg" alt="Ceremony Coordination" class="img-fluid">
+                            </div>
+                            <div class="details">
+                                <h4>Ceremony Coordination</h4>
+                                <p>
+                                    Our team ensures that your ceremony runs smoothly, coordinating all elements so you can enjoy every moment without stress.
+                                </p>
+                                <a href="#" class="section-btn">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="img-box">
+                                <img src="../Weddingwebsite/images/0C3A8684.jpg" alt="Honeymoon Planning" class="img-fluid">
+                            </div>
+                            <div class="details">
+                                <h4>Honeymoon Planning</h4>
+                                <p>
+                                    Let us help you find the perfect honeymoon destination tailored to your preferences, ensuring a romantic getaway to start your new life together.
+                                </p>
+                                <a href="#" class="section-btn">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+       <!-- Portfolio Section -->
+ <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h1 class="text-center">Our Portfolio</h1>
+        <div class="row">
+            <div class="portfolio-item">
+                <img src="./images/0C3A8684.jpg" alt="Wedding Project 1" loading="lazy">
+                <div class="overlay">
+                    <h4>Outdoor Beach Wedding</h4>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/0C3A8606.jpg" alt="Wedding Project 2" loading="lazy">
+                <div class="overlay">
+                    <h4>Elegant Garden Wedding</h4>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/0C3A8653.jpg" alt="Wedding Project 3" loading="lazy">
+                <div class="overlay">
+                    <h4>Vintage Ballroom Wedding</h4>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/0C3A8653.jpg" alt="Wedding Project 4" loading="lazy">
+                <div class="overlay">
+                    <h4>Elegant Indoor Wedding</h4>
+
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/0C3A8606.jpg" alt="Wedding Project 5" loading="lazy">
+                <div class="overlay">
+                    <h4>Rustic Barn Wedding</h4>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="./images/0C3A8684.jpg" alt="Wedding Project 6" loading="lazy">
+                <div class="overlay">
+                    <h4>Charming City Wedding</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h1 class="text-center">Contact Us</h1>
+        <p class="text-center">Have questions? Reach out to us!</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Email:</strong> <a href="mailto:Lubernfigaro5@gmail.com">Lubernfigaro5@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+1617">(617)</a></p>
+                    <p><strong>Location:</strong> Your Address Here</p>
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#" class="me-3"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#" class="me-3"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Main End -->
+
+    <!-- JavaScript Vendors -->
+    <script 
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script 
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"
+    ></script>
+    <!-- Customized JavaScript -->
+    <script src="./main.js"></script>
+</body>
+</html>
