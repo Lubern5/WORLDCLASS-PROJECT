@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Picker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #ffe259, #ffa751);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Game Menu Styles */
+        .game-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .game-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+            border-radius: 20px;
+            z-index: 0;
+        }
+
+        .game-card:hover:before {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .game-card h2 {
+            position: relative;
+            z-index: 1;
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .game-description {
+            margin: 15px 0;
+            font-size: 0.95em;
+            z-index: 1;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .game-description:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(135deg, #ffe259, #ffa751);
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s;
+            z-index: 1;
+            position: relative;
+            display: inline-block;
+        }
+
+        .game-card a:hover {
+            background: linear-gradient(135deg, #ffa751, #ffe259);
+            transform: translateY(-2px);
+        }
+
+        .game-card a:focus {
+            outline: 2px solid #ffa751;
+            outline-offset: 2px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .game-card h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pick Your Game</h1>
+    <div class="game-menu">
+        <div class="game-card">
+            <h2>Tic-Tac-Toe</h2>
+            <p class="game-description">Play a classic game of Tic-Tac-Toe!</p>
+            <a href="tic-tac-toe.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Snake Game</h2>
+            <p class="game-description">Guide the snake and eat the food!</p>
+            <a href="Snakegame.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Slope Offline</h2>
+            <p class="game-description">Roll down the slope and avoid obstacles!</p>
+            <a href="slopeoffline.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Mini Car Game</h2>
+            <p class="game-description">Race your mini car and beat the clock!</p>
+            <a href="mini_car_game.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Tower Defence</h2>
+            <p class="game-description">Defend your tower from invading forces!</p>
+            <a href="HTML Tower Defence.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Connect the Pipes</h2>
+            <p class="game-description">Connect the pipes to let the water flow!</p>
+            <a href="Connect the Pipes.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Brick Breaker</h2>
+            <p class="game-description">Break all the bricks to win the game!</p>
+            <a href="brick-breaker.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>Flappy Bird</h2>
+            <p class="game-description">Navigate the bird through obstacles!</p>
+            <a href="../Flappy-Bird-Game/index.html">Start Game</a>
+        </div>
+        <div class="game-card">
+            <h2>2048</h2>
+            <p class="game-description">Combine tiles to reach 2048!</p>
+            <a href="../2048/index.html">Start Game</a>
+        </div>
+    </div>
+</body>
+</html>
