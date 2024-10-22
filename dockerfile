@@ -18,12 +18,15 @@ EXPOSE 80
 
 # Copy applications to the Apache document root
 COPY ./text-to-speech-converter/ /usr/local/apache2/htdocs/text-to-speech-converter/
-COPY ./Lu-page/ /usr/local/apache2/htdocs/Lu-Portfolio-Website/
+COPY ./Lu-page/ /usr/local/apache2/htdocs/Lu-page/
 COPY ./Weddingwebsite/ /usr/local/apache2/htdocs/Weddingwebsite/
-COPY ./Lu-Portfolio-Website/ /usr/local/apache2/htdocs/Lu-Portfolio-Website/
+COPY ./Lu-Portfolio-Website/ /usr/local/apache2/htdocs/
 COPY ./website/ /usr/local/apache2/htdocs/website/
 COPY ./LuReBuild/ /usr/local/apache2/htdocs/LuReBuild/
 COPY ./images/ /usr/local/apache2/htdocs/images/
 COPY ./Flappy-Bird-Game/ /usr/local/apache2/htdocs/Flappy-Bird-Game/
 COPY ./2048/ /usr/local/apache2/htdocs/2048/
 COPY ./3D-Night-Driving-Car/ /usr/local/apache2/htdocs/3D-Night-Driving-Car/
+
+# Set 'profile.html' as the default landing page
+RUN echo "DirectoryIndex profile.html" >> /usr/local/apache2/conf/httpd.conf
