@@ -10,7 +10,7 @@ WORKDIR /usr/local/apache2/htdocs/
 RUN rm -rf ./* && \
     git clone https://github.com/Lubern5/WORLDCLASS-PROJECT.git . && \
     echo "Options -Indexes" > .htaccess && \
-    echo "IndexIgnore .DS_Store .git/ img/ infra/ lambda-function/ newgym/ pro-site/ website/" >> .htaccess && \
+    echo "IndexIgnore .DS_Store .git/" >> .htaccess && \
     echo "Require all granted" >> .htaccess
 
 # Expose port 80
@@ -21,7 +21,6 @@ COPY ./text-to-speech-converter/ /usr/local/apache2/htdocs/text-to-speech-conver
 COPY ./Lu-page/ /usr/local/apache2/htdocs/Lu-page/
 COPY ./Weddingwebsite/ /usr/local/apache2/htdocs/Weddingwebsite/
 COPY ./Lu-Portfolio-Website/ /usr/local/apache2/htdocs/
-COPY ./website/ /usr/local/apache2/htdocs/website/
 COPY ./LuReBuild/ /usr/local/apache2/htdocs/LuReBuild/
 COPY ./images/ /usr/local/apache2/htdocs/images/
 COPY ./Flappy-Bird-Game/ /usr/local/apache2/htdocs/Flappy-Bird-Game/
