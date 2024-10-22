@@ -25,7 +25,7 @@ COPY ./LuReBuild/ /usr/local/apache2/htdocs/LuReBuild/
 COPY ./images/ /usr/local/apache2/htdocs/images/
 COPY ./Flappy-Bird-Game/ /usr/local/apache2/htdocs/Flappy-Bird-Game/
 COPY ./2048/ /usr/local/apache2/htdocs/2048/
-COPY ./3D-Night-Driving-Car/ /usr/local/apache2/htdocs/3D-Night-Driving-Car/
+COPY ./Offline-HTML-Games/ /usr/local/apache2/htdocs/Offline-HTML-Games/
 
 # Set 'profile.html' as the default landing page
 RUN echo "DirectoryIndex profile.html" >> /usr/local/apache2/conf/httpd.conf
